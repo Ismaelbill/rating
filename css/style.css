@@ -1,0 +1,99 @@
+:root {
+    --Orange: #fb7413;
+    /* ### Neutral */
+    --White: #ffffff;
+    --Light-Grey: #959eac;
+    --Medium-Grey: #7c8798;
+    --Dark-Blue: #252d37;
+    --Very-Dark-Blue: #121417;
+    --mainFont: 'Overpass', sans-serif;
+    /* 400, 700 */
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: var(--mainFont);
+    }
+    
+    .parent {
+        background-color: var(--Very-Dark-Blue);
+        height: 672px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .parent .card {
+        height: 240px;
+        width: 290px;
+        background-color: var(--Dark-Blue);
+        border-radius: 15px;
+        padding: 15px;
+    }
+    
+    .parent .card .image img {
+        width: 23px;
+        border-radius: 50%;
+        background-color: var(--Medium-Grey);
+        padding: 6px;
+    }
+    
+    .parent .card h3 {
+        font-weight: 700;
+        color: var(--White);
+        margin-top: 5px;
+    }
+    
+    .parent .card p {
+        color: var(--Light-Grey);
+        font-size: 12px;
+        margin-top: 5px;
+        font-weight: 400;
+    }
+    
+    .parent .card form ul {
+        display: flex;
+        color: var(--White);
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .parent .card form ul li {
+        list-style: none;
+        background-color: var(--Medium-Grey);
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    
+    .parent .card form ul li:hover {
+        background-color: var(--Orange);
+        transition: .5s;
+    }
+    
+    .parent .card form .sub {
+        outline: none;
+        border: none;
+        background-color: var(--Orange);
+        color: var(--White);
+        font-weight: 700;
+        margin-top: 25px;
+        border-radius: 15px;
+        width: 260px;
+        height: 28px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    
+    .parent .card form .sub:hover {
+        background-color: var(--White);
+        color: var(--Orange);
+    }
